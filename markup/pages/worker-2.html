@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head head.defaults}}
+</head>
+<body class="page" style="visibility: hidden;opacity: 0;">
+    %=symbols=%
+    {{> header/header}}
+
+    <div class="bread">
+        <div class="bread__container">
+            <a href="#">
+                <span>Сотрудники</span>
+            </a>
+            {{Icon iconName="arrow"}}
+            <span>
+                Виктория Беляева, belyaeva@companyname
+            </span>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="cont__left-overlay"></div>
+        <div class="cont__left">
+            <div class="cont-close">
+                <img src='static/img/content/cancel.svg' alt='Картинка'>
+            </div>
+            <div class="cont__search">
+                <button>
+                    {{Icon iconName="search"}}
+                </button>
+                <input type="text" placeholder="Быстрый поиск...">
+            </div>
+            <div class="cont__items">
+                <a href="index.html" class="cont__item ">
+                    <div class="cont__img m-bg-cont">
+                        <img src='static/img/content/cont-1.png' alt='Картинка'>
+                    </div>
+                    <div class="cont__content">
+                        <div class="cont__text">
+                            <div class="cont__title">
+                                Анна Иванова
+                            </div>
+                            <div class="cont__desc">
+                                Менеджер, Отдел продаж
+                            </div>
+                            <div class="cont__ctg status-1">
+                                на увольнении 
+                            </div>
+                        </div>
+                        <div class="cont__number">
+                            12
+                        </div>
+                    </div>
+                </a>
+                <a href="worker-2.html" class="cont__item active">
+                    <div class="cont__img m-bg-cont">
+                        <img src='static/img/content/cont-2.png' alt='Картинка'>
+                    </div>
+                    <div class="cont__content">
+                        <div class="cont__text">
+                            <div class="cont__title">
+                                Виктория Беляева {{Icon iconName="eye"}}
+                            </div>
+                            <div class="cont__desc">
+                                Менеджер, Отдел продаж
+                            </div>
+                            <div class="cont__ctg status-2">
+                                на увольнении 
+                            </div>
+                        </div>
+                        <div class="cont__number">
+                            247
+                        </div>
+                    </div>
+                </a>
+                <a href="worker-3.html" class="cont__item">
+                    <div class="cont__img m-bg-cont">
+                        <img src='static/img/content/cont-3.png' alt='Картинка'>
+                    </div>
+                    <div class="cont__content">
+                        <div class="cont__text">
+                            <div class="cont__title">
+                                Виктор Cурков
+                            </div>
+                            <div class="cont__desc">
+                                Менеджер, Отдел продаж
+                            </div>
+                        </div>
+                        <div class="cont__number">
+                            0
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont__right">
+            <div class="cont-tab">
+                <div class="worker">
+                    <div class="worker__top">
+                        <div class="worker__top-left">
+                            <div class="worker__top-img m-bg-cont">
+                                <img src='static/img/content/cont-2.png' alt='Картинка'>
+                                {{Icon iconName="worker-smile"}}
+                            </div>
+                            <div class="worker__top-text">
+                                <div class="worker__top-title">
+                                    Виктория Беляева {{Icon iconName="eye"}}
+                                </div>
+                                <div class="worker__top-desc">
+                                    Менеджер, Отдел продаж
+                                </div>
+                            </div>
+                        </div>
+                        <div class="worker__right">
+                            <div class="worker__right-top">
+                                <div class="worker__right-active">
+                                    Последняя активность 
+                                    <span>сегодня в 12:22</span>
+                                </div>
+                                <a href="#" class="worker__link">
+                                    {{Icon iconName="arrow-back"}}
+                                    к списку сотрудников 
+                                </a>
+                            </div>
+                            <div class="worker__right-info">
+                                <div class="worker__right-item">
+                                    <div class="worker__right-text">
+                                        Уровень риска
+                                    </div>
+                                    <div class="worker__right-number">
+                                        157
+                                        <span class="red">
+                                            {{Icon iconName="arrow-bottom-red"}}
+                                            -100%
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="worker__right-item">
+                                    <div class="worker__right-text">
+                                        Продуктивность
+                                    </div>
+                                    <div class="worker__right-number">
+                                        86%
+                                        <span>
+                                            {{Icon iconName="arrow-top-green"}}
+                                            +3%
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="worker__right-item">
+                                    <div class="worker__right-text">
+                                        Индекс активности
+                                    </div>
+                                    <div class="worker__right-number">
+                                        2.4%
+                                        <span>
+                                            +14%
+                                            {{Icon iconName="arrow-top-red"}}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="worker__right-item">
+                                    <div class="worker__feat">
+                                        <a href="#" class="worker__feat-link">
+                                            {{Icon iconName="feat-1"}}
+                                        </a>
+                                        <a href="#" class="worker__feat-link">
+                                            {{Icon iconName="feat-2"}}
+                                        </a>
+                                        <a href="#" class="worker__feat-link">
+                                            {{Icon iconName="feat-3"}}
+                                        </a>
+                                        <a href="#" class="worker__feat-link">
+                                            {{Icon iconName="feat-4"}}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="worker__content">
+                        <div class="worker__title">
+                            Аномалии
+                        </div>
+                        <div class="worker__content-items">
+                            <div class="worker__content-item">
+                                <div class="worker__content-icon">
+                                    {{Icon iconName="worker-warning"}}
+                                </div>
+                                <div class="worker__content-text">
+                                    Использование более одного аккаунта в соцсетях или мессенджерах
+                                </div>
+                            </div>
+                            <div class="worker__content-item">
+                                <div class="worker__content-icon">
+                                    {{Icon iconName="worker-warning"}}
+                                </div>
+                                <div class="worker__content-text">
+                                    Первое использование устройства
+                                </div>
+                            </div>
+                            <div class="worker__content-item">
+                                <div class="worker__content-icon">
+                                    {{Icon iconName="worker-warning"}}
+                                </div>
+                                <div class="worker__content-text">
+                                    Отсутствие более 40 дней 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="worker__main">
+                        <div class="worker__title">
+                            Основные показатели
+                        </div>
+                        <div class="worker__main-content">
+                            Данные не найдены
+                        </div>
+                    </div>
+                    
+
+                    <div class="worker__info">
+                        <div class="worker__info-item">
+                            <div class="worker__title">
+                                Приложения и категории
+                            </div>
+                            <div class="worker__info-table">
+                                <table>
+                                    <tr>
+                                        <th>Категория приложений</th>
+                                        <th class="tar">время</th>
+                                        <th class="tac">%</th>
+                                        <th>рост</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square yellow"></div>
+                                                <span class="text-content">Месседжеры</span>
+                                            </div>
+                                        </td>
+                                        <td  class="tar"><span class="text-blue">20:55</span></td>
+                                        <td class="tac">18</td>
+                                        <td>+2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square yellow"></div>
+                                                <span class="text-content">Браузеры</span>
+                                            </div>
+                                        </td>
+                                        <td  class="tar"><span class="text-blue">15:11</span></td>
+                                        <td class="tac">12</td>
+                                        <td>3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square red"></div>
+                                                <span class="text-content">Игры</span>
+                                            </div>
+                                        </td>
+                                        <td class="tar"><span class="text-blue">13:11</span></td>
+                                        <td class="tac">7</td>
+                                        <td>0</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="worker__info-item">
+                            <div class="worker__title">
+                                Сайты и категории
+                            </div>
+                            <div class="worker__info-table">
+                                <table>
+                                    <tr>
+                                        <th>Категория сайтов </th>
+                                        <th class="tar">время</th>
+                                        <th class="tac">%</th>
+                                        <th>рост</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square yellow"></div>
+                                                <span class="text-content">Поисковики</span>
+                                            </div>
+                                        </td>
+                                        <td class="tar"><span class="text-blue">20:55</span></td>
+                                        <td class="tac">18</td>
+                                        <td>+2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square green"></div>
+                                                <span class="text-content">Новостные порталы</span>
+                                            </div>
+                                        </td>
+                                        <td class="tar"><span class="text-blue">15:11</span></td>
+                                        <td class="tac">12</td>
+                                        <td>3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="label">
+                                                <div class="square green"></div>
+                                                <span class="text-content">Сайты с неопределенным наполнением</span>
+                                            </div>
+                                        </td>
+                                        <td class="tar"><span class="text-blue">13:11</span></td>
+                                        <td class="tac">7</td>
+                                        <td>0</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="worker__info-item">
+                            <div class="worker__title">
+                                Дисциплина
+                            </div>
+                            <div class="worker__info-table table-1">
+                                <table>
+                                    <tr>
+                                        <th class="tal">Дата </th>
+                                        <th class="tac">Приход на работу</th>
+                                        <th class="tac">Уход с работы</th>
+                                        <th class="tac">Время на работе</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tal">29.02</td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:46 <span class="red">-16 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:46 <span class="red">-16 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                09:06 <span class="green">+6 мин</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tal">28.02</td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:27 <span class="green">-3 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:46 <span class="green">-3 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:36 <span class="red">-24 мин</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tal">25.02</td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:42 <span class="red">+12 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:42 <span class="red">+12 мин</span>
+                                            </div>
+                                        </td>
+                                        <td class="tac">
+                                            <div class="table-flex-cont">
+                                                08:36 <span class="red">-24 мин</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{> footer/footer}}
+
+</body>
+</html>
