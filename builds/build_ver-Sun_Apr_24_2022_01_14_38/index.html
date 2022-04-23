@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body class="page" style="visibility: hidden;opacity: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;"
+        class="root-svg-symbols-element">
+            <symbol id="arrow-back" viewBox="0 0 12 6">
+                <path d="M3.57996 4.071H11.4C11.57 4.071 11.71 3.92701 11.71 3.75001V2.251C11.71 2.073 11.57 1.92901 11.4 1.92901H3.57996V0.696004C3.57996 0.124004 2.91002 -0.162998 2.52002 0.242002L0.290039 2.546C0.0400391 2.797 0.0400391 3.20301 0.290039 3.45401L2.52002 5.75801C2.91002 6.16301 3.57996 5.87601 3.57996 5.30401V4.071Z"
+                fill="#058DC7" />
+            </symbol>
+            <symbol id="arrow-bottom-red" viewBox="0 0 9 4">
+                <path d="M1.47 0H7.56998C7.98998 0 8.20005 0.510006 7.90005 0.809006L4.86001 3.86099C4.67001 4.04599 4.37008 4.04599 4.18008 3.86099L1.14004 0.809006C0.840044 0.510006 1.05 0 1.47 0Z" fill="#EE144E" />
+            </symbol>
+            <symbol id="arrow-top-green" viewBox="0 0 9 4">
+                <path d="M7.56991 3.99999H1.46994C1.04994 3.99999 0.839982 3.48899 1.13998 3.18999L4.18991 0.138994C4.36991 -0.0460059 4.66994 -0.0460059 4.84994 0.138994L7.89999 3.18999C8.19999 3.48899 7.98991 3.99999 7.56991 3.99999Z" fill="#00983E" />
+            </symbol>
+            <symbol id="arrow-top-red" viewBox="0 0 9 4">
+                <path d="M7.56991 3.99999H1.46994C1.04994 3.99999 0.839982 3.48899 1.13998 3.18999L4.18991 0.138994C4.36991 -0.0460059 4.66994 -0.0460059 4.84994 0.138994L7.89999 3.18999C8.19999 3.48899 7.98991 3.99999 7.56991 3.99999Z" fill="#EE144E" />
+            </symbol>
+            <symbol id="arrow" viewBox="0 0 6 10">
+                <path d="M5.48688 5.3498L1.72989 9.35511C1.54889 9.54831 1.25488 9.54831 1.07388 9.35511L0.635864 8.888C0.454864 8.6951 0.454887 8.3826 0.634887 8.1893L3.61288 5L0.634887 1.8107C0.454887 1.6174 0.454864 1.3049 0.635864 1.112L1.07388 0.6449C1.25488 0.4517 1.54889 0.4517 1.72989 0.6449L5.48688 4.6502C5.66788 4.8434 5.66788 5.1566 5.48688 5.3498Z"
+                fill="#707478" />
+            </symbol>
+            <symbol id="eye" viewBox="0 0 14 10">
+                <path d="M6.50102 2.52901C6.26102 2.53401 6.024 2.57 5.796 2.642C5.903 2.827 5.95902 3.037 5.95902 3.252C5.95902 3.949 5.39202 4.51601 4.69502 4.51601C4.48102 4.51301 4.27101 4.457 4.08601 4.353C3.70001 5.689 4.47201 7.089 5.81001 7.472C7.14801 7.858 8.54602 7.086 8.93202 5.748C9.31702 4.409 8.54601 3.01201 7.20701 2.62601C6.97701 2.56101 6.74002 2.52901 6.50102 2.52901ZM12.922 4.728C11.699 2.34 9.27502 0.723999 6.50102 0.723999C3.72702 0.723999 1.30302 2.34 0.07902 4.728C-0.02398 4.935 -0.02398 5.17899 0.07902 5.38699C1.30302 7.77499 3.72702 9.39101 6.50102 9.39101C9.27502 9.39101 11.699 7.77499 12.922 5.38699C13.028 5.17899 13.028 4.935 12.922 4.728ZM6.50102 8.30701C4.27502 8.30701 2.23302 7.06601 1.13102 5.05701C2.23302 3.04801 4.27302 1.80701 6.50102 1.80701C8.72802 1.80701 10.769 3.04801 11.87 5.05701C10.769 7.06601 8.72802 8.30701 6.50102 8.30701Z"
+                fill="#3E3E3E" />
+            </symbol>
+            <symbol id="feat-1" viewBox="0 0 18 16">
+                <path d="M15.42 0H1.84998C0.829976 0 0 0.768005 0 1.714V14.286C0 15.233 0.829976 16 1.84998 16H15.42C16.44 16 17.27 15.233 17.27 14.286V1.714C17.27 0.768005 16.44 0 15.42 0ZM15.42 14.286H1.84998V1.714H15.42V14.286ZM14.04 5.653L7.39001 11.767C7.20001 11.934 6.90998 11.933 6.72998 11.765L3.22998 8.496C3.04998 8.328 3.04998 8.057 3.22998 7.89L4.10999 7.08501C4.28999 6.91901 4.58001 6.92 4.76001 7.088L7.06995 9.241L12.52 4.233C12.7 4.066 12.99 4.067 13.17 4.235L14.04 5.047C14.22 5.215 14.22 5.486 14.04 5.653Z"
+                fill="gray" />
+            </symbol>
+            <symbol id="feat-2" viewBox="0 0 20 14">
+                <path d="M18.09 0.367981H17.6801C17.2501 0.367981 16.84 0.542989 16.54 0.853989L13.24 4.23698V2.02599C13.24 1.11099 12.51 0.367981 11.62 0.367981H1.91003C1.01003 0.367981 0.290039 1.11099 0.290039 2.02599V11.974C0.290039 12.889 1.01003 13.632 1.91003 13.632H11.62C12.51 13.632 13.24 12.889 13.24 11.974V9.76299L16.54 13.146C16.84 13.457 17.2501 13.632 17.6801 13.632H18.09C18.99 13.632 19.71 12.889 19.71 11.974V2.02599C19.71 1.11099 18.99 0.367981 18.09 0.367981Z"
+                fill="gray" />
+            </symbol>
+            <symbol id="feat-3" viewBox="0 0 22 18">
+                <path d="M20.26 0H1.73999C0.83999 0 0.109985 0.745993 0.109985 1.66499V12.767C0.109985 13.687 0.83999 14.433 1.73999 14.433H10.08V15.543H4.64001C4.03001 15.543 3.55005 16.039 3.55005 16.653C3.55005 17.267 4.03001 17.763 4.64001 17.763H17.71C18.31 17.763 18.8 17.267 18.8 16.653C18.8 16.039 18.31 15.543 17.71 15.543H12.26V14.433H20.26C21.16 14.433 21.89 13.687 21.89 12.767V1.66499C21.89 0.745993 21.16 0 20.26 0ZM19.72 12.212H2.28003V2.22H19.72V12.212Z"
+                fill="gray" />
+            </symbol>
+            <symbol id="feat-4" viewBox="0 0 21 19">
+                <path d="M21 14.739V15.91C21 16.232 20.74 16.496 20.41 16.496H18.73V18.178C18.73 18.5 18.47 18.764 18.15 18.764H16.98C16.65 18.764 16.39 18.5 16.39 18.178V16.496H14.71C14.39 16.496 14.12 16.232 14.12 15.91V14.739C14.12 14.417 14.39 14.154 14.71 14.154H16.39V12.471C16.39 12.149 16.65 11.886 16.98 11.886H18.15C18.47 11.886 18.73 12.149 18.73 12.471V14.154H20.41C20.74 14.154 21 14.417 21 14.739ZM0.589966 2.44699H15.8C16.13 2.44699 16.39 2.18298 16.39 1.86098V0.690979C16.39 0.368979 16.13 0.10498 15.8 0.10498H0.589966C0.259966 0.10498 0 0.368979 0 0.690979V1.86098C0 2.18698 0.259966 2.44699 0.589966 2.44699ZM0.589966 7.12999H15.8C16.13 7.12999 16.39 6.86599 16.39 6.54399V5.37398C16.39 5.05198 16.13 4.78798 15.8 4.78798H0.589966C0.259966 4.78798 0 5.05198 0 5.37398V6.54399C0 6.86999 0.259966 7.12999 0.589966 7.12999ZM0 14.739V15.91C0 16.232 0.259966 16.496 0.589966 16.496H11.67V14.154H0.589966C0.259966 14.154 0 14.417 0 14.739ZM0 10.056V11.227C0 11.549 0.259966 11.813 0.589966 11.813H14.03V9.47098H0.589966C0.259966 9.47098 0 9.73498 0 10.056Z"
+                fill="#000" />
+            </symbol>
+            <symbol id="search" viewBox="0 0 12 12">
+                <path d="M11.222 10.375L9.00595 8.038C8.90595 7.933 8.77096 7.874 8.62796 7.874H8.26596C8.87996 7.047 9.24396 6.006 9.24396 4.875C9.24396 2.182 7.17495 0 4.62195 0C2.06895 0 -6.10352e-05 2.182 -6.10352e-05 4.875C-6.10352e-05 7.567 2.06895 9.749 4.62195 9.749C5.69495 9.749 6.68194 9.365 7.46594 8.718V9.1C7.46594 9.25 7.52195 9.393 7.62195 9.498L9.83694 11.835C10.0459 12.055 10.3839 12.055 10.5909 11.835L11.2199 11.172C11.4279 10.951 11.428 10.595 11.222 10.375ZM4.62195 7.874C3.05095 7.874 1.77695 6.534 1.77695 4.875C1.77695 3.218 3.04895 1.875 4.62195 1.875C6.19295 1.875 7.46594 3.215 7.46594 4.875C7.46594 6.531 6.19495 7.874 4.62195 7.874Z"
+                fill="#999" />
+            </symbol>
+            <symbol id="worker-smile" viewBox="0 0 17 17">
+                <path d="M8.5 17C13.1944 17 17 13.1944 17 8.5C17 3.80558 13.1944 0 8.5 0C3.80558 0 0 3.80558 0 8.5C0 13.1944 3.80558 17 8.5 17Z" fill="#fff" />
+                <path d="M8.5 0C3.804 0 0 3.804 0 8.5C0 13.196 3.804 17 8.5 17C13.196 17 17 13.196 17 8.5C17 3.804 13.196 0 8.5 0ZM8.5 15.355C4.72 15.355 1.64502 12.28 1.64502 8.5C1.64502 4.72 4.72 1.645 8.5 1.645C12.28 1.645 15.355 4.72 15.355 8.5C15.355 12.28 12.28 15.355 8.5 15.355ZM5.758 7.952C6.365 7.952 6.85498 7.461 6.85498 6.855C6.85498 6.248 6.365 5.758 5.758 5.758C5.151 5.758 4.66101 6.248 4.66101 6.855C4.66101 7.461 5.151 7.952 5.758 7.952ZM11.242 7.952C11.849 7.952 12.339 7.461 12.339 6.855C12.339 6.248 11.849 5.758 11.242 5.758C10.635 5.758 10.145 6.248 10.145 6.855C10.145 7.461 10.635 7.952 11.242 7.952ZM11.379 10.44C10.666 11.297 9.614 11.79 8.5 11.79C7.386 11.79 6.33397 11.3 5.62097 10.44C5.32997 10.09 4.80901 10.046 4.46301 10.334C4.11301 10.625 4.06802 11.143 4.35602 11.492C5.38402 12.726 6.896 13.432 8.5 13.432C10.104 13.432 11.616 12.726 12.644 11.492C12.935 11.143 12.887 10.625 12.537 10.334C12.191 10.046 11.67 10.09 11.379 10.44Z"
+                fill="#B346BD" />
+            </symbol>
+            <symbol id="worker-warning" viewBox="0 0 15 15">
+                <path d="M14.831 12.54C15.312 13.409 14.708 14.495 13.748 14.495H1.25099C0.289995 14.495 -0.310975 13.407 0.169025 12.54L6.41701 1.24397C6.89801 0.373974 8.10303 0.375974 8.58303 1.24397L14.831 12.54ZM7.50002 10.205C6.83802 10.205 6.30202 10.764 6.30202 11.454C6.30202 12.143 6.83802 12.703 7.50002 12.703C8.16202 12.703 8.69802 12.143 8.69802 11.454C8.69802 10.764 8.16202 10.205 7.50002 10.205ZM6.36299 5.71498L6.55605 9.40798C6.56505 9.57998 6.702 9.71599 6.868 9.71599H8.13204C8.29804 9.71599 8.43499 9.57998 8.44399 9.40798L8.63704 5.71498C8.64704 5.52798 8.50503 5.37099 8.32503 5.37099H6.67501C6.49501 5.37099 6.35299 5.52798 6.36299 5.71498Z"
+                fill="#EE144E" />
+            </symbol>
+        </svg>
+        <div class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src='static/img/content/logo.png' alt='Картинка'>
+                </a>
+                <div class="cont-open">
+                    <img src='static/img/content/hamburger.svg' alt='Картинка'>
+                    <span>
+
+                    Меню
+
+                </span>
+                </div>
+                <a href="#" class="header__prf">
+                    <div class="header__prf-icon m-bg-cont">
+                        <img src='static/img/content/pft.png' alt='Картинка'>
+                    </div>
+                    <div class="header__prf-text">
+                        Имя фамилия
+                    </div>
+                    <div class="header__prf-exit">
+                        <img src='static/img/content/exit.png' alt='Картинка'>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bread">
+            <div class="bread__container">
+                <a href="#">
+                    <span>Сотрудники</span>
+                </a>
+
+                <svg class="icon__arrow" width="6px" height="10px">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+
+                <span>
+
+                Анна Иванова, ivanova@companyname
+
+            </span>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div class="cont__left-overlay"></div>
+            <div class="cont__left">
+                <div class="cont-close">
+                    <img src='static/img/content/cancel.svg' alt='Картинка'>
+                </div>
+                <div class="cont__search">
+                    <button>
+
+                        <svg class="icon__search" width="12px" height="12px">
+                            <use xlink:href="#search"></use>
+                        </svg>
+
+                    </button>
+                    <input type="text" placeholder="Быстрый поиск...">
+                </div>
+                <div class="cont__items">
+                    <a href="index.html" class="cont__item active">
+                        <div class="cont__img m-bg-cont">
+                            <img src='static/img/content/cont-1.png' alt='Картинка'>
+                        </div>
+                        <div class="cont__content">
+                            <div class="cont__text">
+                                <div class="cont__title">
+                                    Анна Иванова
+                                </div>
+                                <div class="cont__desc">
+                                    Менеджер, Отдел продаж
+                                </div>
+                                <div class="cont__ctg status-1">
+                                    на увольнении
+                                </div>
+                            </div>
+                            <div class="cont__number">
+                                12
+                            </div>
+                        </div>
+                    </a>
+                    <a href="worker-2.html" class="cont__item">
+                        <div class="cont__img m-bg-cont">
+                            <img src='static/img/content/cont-2.png' alt='Картинка'>
+                        </div>
+                        <div class="cont__content">
+                            <div class="cont__text">
+                                <div class="cont__title">
+                                    Виктория Беляева
+                                    <svg class="icon__eye" width="14px" height="10px">
+                                        <use xlink:href="#eye"></use>
+                                    </svg>
+
+                                </div>
+                                <div class="cont__desc">
+                                    Менеджер, Отдел продаж
+                                </div>
+                                <div class="cont__ctg status-2">
+                                    на увольнении
+                                </div>
+                            </div>
+                            <div class="cont__number">
+                                247
+                            </div>
+                        </div>
+                    </a>
+                    <a href="worker-3.html" class="cont__item">
+                        <div class="cont__img m-bg-cont">
+                            <img src='static/img/content/cont-3.png' alt='Картинка'>
+                        </div>
+                        <div class="cont__content">
+                            <div class="cont__text">
+                                <div class="cont__title">
+                                    Виктор Cурков
+                                </div>
+                                <div class="cont__desc">
+                                    Менеджер, Отдел продаж
+                                </div>
+                            </div>
+                            <div class="cont__number">
+                                0
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="cont__right">
+                <div class="cont-tab">
+                    <div class="worker">
+                        <div class="worker__top">
+                            <div class="worker__top-left">
+                                <div class="worker__top-img m-bg-cont">
+                                    <img src='static/img/content/cont-1.png' alt='Картинка'>
+
+                                    <svg class="icon__worker-smile" width="17px" height="17px">
+                                        <use xlink:href="#worker-smile"></use>
+                                    </svg>
+
+                                </div>
+                                <div class="worker__top-text">
+                                    <div class="worker__top-title">
+                                        Анна Иванова
+                                        <svg class="icon__eye" width="14px" height="10px">
+                                            <use xlink:href="#eye"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="worker__top-desc">
+                                        Менеджер, Отдел продаж
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="worker__right">
+                                <div class="worker__right-top">
+                                    <div class="worker__right-active">
+                                        Последняя активность
+                                        <span>сегодня в 12:22</span>
+                                    </div>
+                                    <a href="#" class="worker__link">
+
+                                        <svg class="icon__arrow-back" width="12px" height="6px">
+                                            <use xlink:href="#arrow-back"></use>
+                                        </svg>
+
+                                        к списку сотрудников
+                                    </a>
+                                </div>
+                                <div class="worker__right-info">
+                                    <div class="worker__right-item">
+                                        <div class="worker__right-text">
+                                            Уровень риска
+                                        </div>
+                                        <div class="worker__right-number">
+                                            157
+                                            <span class="red">
+
+                                            
+            <svg class="icon__arrow-bottom-red" width="9px" height="4px">
+                <use xlink:href="#arrow-bottom-red"></use>
+            </svg>
+        
+
+                                            -100%
+
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="worker__right-item">
+                                        <div class="worker__right-text">
+                                            Продуктивность
+                                        </div>
+                                        <div class="worker__right-number">
+                                            86%
+                                            <span>
+
+                                            
+            <svg class="icon__arrow-top-green" width="9px" height="4px">
+                <use xlink:href="#arrow-top-green"></use>
+            </svg>
+        
+
+                                            +3%
+
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="worker__right-item">
+                                        <div class="worker__right-text">
+                                            Индекс активности
+                                        </div>
+                                        <div class="worker__right-number">
+                                            2.4%
+                                            <span>
+
+                                            +14%
+
+                                            
+            <svg class="icon__arrow-top-red" width="9px" height="4px">
+                <use xlink:href="#arrow-top-red"></use>
+            </svg>
+        
+
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div class="worker__right-item">
+                                        <div class="worker__feat">
+                                            <a href="#" class="worker__feat-link">
+
+                                                <svg class="icon__feat-1" width="18px" height="16px">
+                                                    <use xlink:href="#feat-1"></use>
+                                                </svg>
+
+                                            </a>
+                                            <a href="#" class="worker__feat-link">
+
+                                                <svg class="icon__feat-2" width="20px" height="14px">
+                                                    <use xlink:href="#feat-2"></use>
+                                                </svg>
+
+                                            </a>
+                                            <a href="#" class="worker__feat-link">
+
+                                                <svg class="icon__feat-3" width="22px" height="18px">
+                                                    <use xlink:href="#feat-3"></use>
+                                                </svg>
+
+                                            </a>
+                                            <a href="#" class="worker__feat-link">
+
+                                                <svg class="icon__feat-4" width="21px" height="19px">
+                                                    <use xlink:href="#feat-4"></use>
+                                                </svg>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="worker__content">
+                            <div class="worker__title">
+                                Аномалии
+                            </div>
+                            <div class="worker__content-items">
+                                <div class="worker__content-item">
+                                    <div class="worker__content-icon">
+
+                                        <svg class="icon__worker-warning" width="15px" height="15px">
+                                            <use xlink:href="#worker-warning"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="worker__content-text">
+                                        Использование более одного аккаунта в соцсетях или мессенджерах
+                                    </div>
+                                </div>
+                                <div class="worker__content-item">
+                                    <div class="worker__content-icon">
+
+                                        <svg class="icon__worker-warning" width="15px" height="15px">
+                                            <use xlink:href="#worker-warning"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="worker__content-text">
+                                        Первое использование устройства
+                                    </div>
+                                </div>
+                                <div class="worker__content-item">
+                                    <div class="worker__content-icon">
+
+                                        <svg class="icon__worker-warning" width="15px" height="15px">
+                                            <use xlink:href="#worker-warning"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="worker__content-text">
+                                        Отсутствие более 40 дней
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="worker__main">
+                            <div class="worker__title">
+                                Основные показатели
+                            </div>
+                            <div class="worker__main-content">
+                                Данные не найдены
+                            </div>
+                        </div>
+
+
+                        <div class="worker__info">
+                            <div class="worker__info-item">
+                                <div class="worker__title">
+                                    Приложения и категории
+                                </div>
+                                <div class="worker__info-table">
+                                    <table>
+                                        <tr>
+                                            <th>Категория приложений</th>
+                                            <th class="tar">время</th>
+                                            <th class="tac">%</th>
+                                            <th>рост</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square yellow"></div>
+                                                    <span class="text-content">Месседжеры</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">20:55</span>
+                                            </td>
+                                            <td class="tac">18</td>
+                                            <td>+2%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square yellow"></div>
+                                                    <span class="text-content">Браузеры</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">15:11</span>
+                                            </td>
+                                            <td class="tac">12</td>
+                                            <td>3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square red"></div>
+                                                    <span class="text-content">Игры</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">13:11</span>
+                                            </td>
+                                            <td class="tac">7</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="worker__info-item">
+                                <div class="worker__title">
+                                    Сайты и категории
+                                </div>
+                                <div class="worker__info-table">
+                                    <table>
+                                        <tr>
+                                            <th>Категория сайтов</th>
+                                            <th class="tar">время</th>
+                                            <th class="tac">%</th>
+                                            <th>рост</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square yellow"></div>
+                                                    <span class="text-content">Поисковики</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">20:55</span>
+                                            </td>
+                                            <td class="tac">18</td>
+                                            <td>+2%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square green"></div>
+                                                    <span class="text-content">Новостные порталы</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">15:11</span>
+                                            </td>
+                                            <td class="tac">12</td>
+                                            <td>3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="label">
+                                                    <div class="square green"></div>
+                                                    <span class="text-content">Сайты с неопределенным наполнением</span>
+                                                </div>
+                                            </td>
+                                            <td class="tar"><span class="text-blue">13:11</span>
+                                            </td>
+                                            <td class="tac">7</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="worker__info-item">
+                                <div class="worker__title">
+                                    Дисциплина
+                                </div>
+                                <div class="worker__info-table table-1">
+                                    <table>
+                                        <tr>
+                                            <th class="tal">Дата</th>
+                                            <th class="tac">Приход на работу</th>
+                                            <th class="tac">Уход с работы</th>
+                                            <th class="tac">Время на работе</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">29.02</td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:46 <span class="red">-16 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:46 <span class="red">-16 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    09:06 <span class="green">+6 мин</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">28.02</td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:27 <span class="green">-3 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:46 <span class="green">-3 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:36 <span class="red">-24 мин</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">25.02</td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:42 <span class="red">+12 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:42 <span class="red">+12 мин</span>
+                                                </div>
+                                            </td>
+                                            <td class="tac">
+                                                <div class="table-flex-cont">
+                                                    08:36 <span class="red">-24 мин</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="thanx-trigger" data-popup="thanx">
+
+        </div>
+        <div class="blur">
+            <div class="popup popup-thanx modal-1 modal">
+                <img data-src='static/img/content/popup-branch-1.png'>
+                <img data-src='static/img/content/popup-branch-2.png'>
+                <div class="modal__close popup__close">
+                </div>
+
+                <div class="modal__title">
+                    Спасибо, ваше сообщение отправлено!
+                </div>
+            </div>
+        </div>
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <!-- <script src="	" type="text/javascript"></script> -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
